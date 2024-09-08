@@ -1,0 +1,4 @@
+opencv-python
+moviepy
+googletrans==4.0.0-rc1
+# Add other dependencies as needed
