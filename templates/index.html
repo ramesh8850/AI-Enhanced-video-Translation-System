@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles.css">
+    <title>Video Translation</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Video Translation</h1>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" id="videoFile" name="videoFile" accept="video/*" required>
+            <select id="languageSelect" name="language">
+                <option value="es">Spanish</option>
+                <option value="hi">Hindi</option>
+                <option value="fr">French</option>
+                <!-- Add more languages as needed -->
+            </select>
+            <button type="submit">Upload Video</button>
+        </form>        
+        <div id="downloadLink" style="display:none;">
+            <a href="#" id="translatedVideoLink" download>Download Translated Video</a>
+        </div>
+    </div>
+    <script src="../static/index.js"></script>
+</body>
+</html>
