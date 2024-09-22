@@ -135,7 +135,6 @@ def adjust_audio_duration(audio_path, target_duration, output_path):
 
 def merge_audio_with_video(video_path, translated_audio_path, output_path):
     video = VideoFileClip(video_path)
-    translated_audio = AudioFileClip(translated_audio_path)
 
     target_duration = video.duration
     translated_audio_path_adjusted = os.path.join(PROCESSED_FOLDER, "adjusted_" + os.path.basename(translated_audio_path))
