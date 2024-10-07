@@ -6,6 +6,11 @@ gtts
 SpeechRecognition
 pydub
 ffmpeg-python
-vosk
-
+# vosk
+transformers
+torchaudio
+sentencepiece
+librosa
+soundfile
+pytube
 # Add other dependencies as needed
