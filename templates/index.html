@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/styles.css">
+    <title>Video Translation</title>
+</head>
+<body>
+    <!-- <h1 class="card-title text-center">Video Translation</h1> -->
+    <div class="container">
+        <h1 class="card-title text-center">Video Translation</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <!-- Uploaded Video Card -->
+                <div class="card">
+                    <div class="card-body">
+                        <div id="uploadedVideoPlayer" style="display:none;">
+                            <h2 class="card-title">Uploaded Video:</h2>
+                            <video id="uploadedVideo" controls class="w-100">
+                                <source id="uploadedVideoSource" src="" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <!-- Form Card -->
+                <div class="card">
+                    <div class="card-body">
+                        <form id="uploadForm" enctype="multipart/form-data">
+                            <input type="file" id="videoFile" name="videoFile" accept="video/*" onchange="displaySelectedVideo()" class="form-control mb-3">
+                            <select id="languageSelect" name="language" required class="form-control mb-3">
+                                <option value="en">English</option>
+                                <option value="hi">Hindi</option>
+                                <option value="te">Telugu</option>
+                                <option value="ta">Tamil</option>
+                                <option value="kn">Kannada</option>
+                                <!-- Add more languages as needed -->
+                            </select>
+                            <button type="submit" class="btn btn-primary btn-block">Translate Video</button>
+                        </form>
+                        
+                        <div id="loadingIndicator" style="display:none;" class="text-center">
+                            <p>Processing your video, please wait...</p>
+                            <div class="spinner-border" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                        </div>
+
+                        <div id="downloadLink" style="display:none;" class="text-center mt-3">
+                            <a href="#" id="translatedVideoLink" class="btn btn-success" download>Download Translated Video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <!-- Translated Video Card -->
+                <div class="card">
+                    <div class="card-body">
+                        <div id="videoPlayer" style="display:none;">
+                            <h2 class="card-title">Translated Video:</h2>
+                            <video id="translatedVideo" controls class="w-100">
+                                <source id="videoSource" src="" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (Optional, for any interactivity) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="../static/index.js"></script>
+</body>
+</html>
