@@ -7,17 +7,9 @@ from pydub import AudioSegment
 from pydub.utils import which
 import time
 from pydub.silence import detect_nonsilent
-# from transformers import Wav2Vec2ForCTC, Wav2Vec2Processor
-# import torchaudio
-# import torch
 import librosa
 import soundfile as sf
 from transformers import AutoProcessor, WhisperForConditionalGeneration
-# from transformers import AutoProcessor, WhisperForConditionalGeneration, SpeechT5Processor, SpeechT5ForTextToSpeech, SpeechT5HifiGan, set_seed, AutoTokenizer
-# import wave
-# import json
-# import vosk
-# from vosk import Model, KaldiRecognizer
 
 # Define folder for processed files
 PROCESSED_FOLDER = 'processed'

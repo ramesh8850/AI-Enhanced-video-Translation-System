@@ -3,4 +3,5 @@ __pycache__/
 venv/
 uploads/
 processed/
+clean_testset_wav/
 
