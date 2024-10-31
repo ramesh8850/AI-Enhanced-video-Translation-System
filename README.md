@@ -47,6 +47,9 @@ The **AI-Enhanced Video Translation System** is a web application that enables u
 - Upload your video file or enter a YouTube link, select the target language, and click "Translate."
 
 - Once processing is complete, you can download the translated video.
+## Interface
+- ![video_translation ouput](https://github.com/user-attachments/assets/b929aafa-2abd-4f54-ae3e-48b82891315d)
+
 
 ## Contributing
 - Contributions are welcome! If you have suggestions for improvements or want to report bugs, please create an issue or submit a pull request.
