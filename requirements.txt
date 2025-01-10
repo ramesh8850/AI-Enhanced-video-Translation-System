@@ -6,7 +6,6 @@ gtts
 SpeechRecognition
 pydub
 ffmpeg-python
-# vosk
 transformers
 torchaudio
 sentencepiece
